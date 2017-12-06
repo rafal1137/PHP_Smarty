@@ -16,10 +16,13 @@ if ($login->isLoggedIn()) {
         $login->logout();
         $sm->assign('member', false);
         header('Location: login.php');
+    } elseif ($_GET['page'] === 'zaplac') {
+        header('Location: przelew.php');
     }
+    
     $sm->assign('auth', $_SESSION['auth']);
     $sm->assign('sid', session_id());
     $sm->assign('member', $login->isLoggedIn());
 }
- 
+
 $sm->display('index.tpl');
