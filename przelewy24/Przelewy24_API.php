@@ -6,8 +6,8 @@
  * and open the template in the editor.
  */
 
-define('PRZELEWY24_MERCHANT_ID', '68353');
-define('PRZELEWY24_CRC', 'cdc86b3942cc24b9');
+define('PRZELEWY24_MERCHANT_ID', '');
+define('PRZELEWY24_CRC', '');
 // sandbox - server testowy, secure - server produkcyjny
 define('PRZELEWY24_TYPE', 'sandbox');
 
